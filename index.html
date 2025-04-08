@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate and Speak</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="./script.js" defer></script>
+
+<body>
+    <div class="container">
+        <h2>Translate App</h2>
+        <div class="box">
+            <div class="translation-box">
+                <textarea id="inputText" placeholder="Enter text to translate..."></textarea>
+                <div class="controls">
+                    <span class="cover">
+                        <select id="inputLang"></select>
+                    </span>
+                    <button class="speak-btn" data-target="inputText">
+                        <i class="fa-solid fa-volume-off"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="translation-box">
+                <textarea id="outputText" placeholder="Translated text will appear here..."></textarea>
+                <div class="controls">
+                    <span class="cover">
+                        <select id="outputLang"></select>
+                    </span>
+                    <button class="speak-btn" data-target="outputText">
+                        <i class="fa-solid fa-volume-off"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button id="translateBtn" class="translate-btn">Translate</button>
+    </div>
+</body>
+
+</html>
